@@ -59,3 +59,19 @@ Used for numbers beyond JavaScript’s `Number.MAX_SAFE_INTEGER` (9,007,199,254,
 let bigNumber = 123456789012345678901234567890n; // "n" at the end makes it a BigInt
 console.log(bigNumber);
 ```
+
+## Checking the type of a variable using the `typeof` operator
+You can check the type of a variable using the `typeof` operator in JavaScript.
+
+```JavaScript
+let bigNumber = 123456789012345678901234567890n;
+console.log(typeof bigNumber); // bigint
+// OR
+console.log(typeof bigNumber); // bigint
+
+const age = 25;
+const fullName = "John Doe";
+
+console.log(typeof age); // number
+console.log(typeof fullName); // string
+```
