@@ -74,3 +74,68 @@ console.log(age); // Output: 25
 ```
 
 **NOTE: `const` must be initialized immediately**
+
+## Rules for naming variables
+### Variable names can only start with a letter, underscore (_), or dollar sign ($).
+
+✅Valid examples:
+```JavaScript
+let name = "Dennis";
+let _score = 100;
+let $price = 49.99; 
+```
+❌ Invalid Example:
+```JavaScript
+let 1stPlace = "Gold"; // ❌ Cannot start with a number
+```
+
+### Variable names cannot be JavaScript reserved keywords
+
+❌ Invalid Examples:
+```JavaScript
+let let = "Hello"; // ❌ "let" is a reserved keyword
+let function = 25; // ❌ "function" is a reserved keyword
+```
+
+### Variable names can only contain letters, numbers, underscore and the dollar sign, no special characters or spaces
+✅ Valid Examples:
+```JavaScript
+let userAge = 25;
+let _totalAmount = 100;
+let $discount = 5;
+```
+❌ Invalid Example:
+```JavaScript
+let user-age = 25; // ❌ Hyphens are not allowed
+let total amount = 100; // ❌ Spaces are not allowed
+```
+
+### Variable names are case-sensitive
+JavaScript differentiates between uppercase and lowercase letters.
+```JavaScript
+let Age = 30;
+let age = 25;
+console.log(Age); // 30
+console.log(age); // 25
+```
+Even though the names look similar, they are treated as separate variables.
+
+### Use meaningful and descriptive names
+✅ Good Practice:
+```JavaScript
+let userName = "John"; 
+let totalPrice = 150;
+let isLoggedIn = true;
+```
+❌ Bad Practice:
+```JavaScript
+let x = "John"; // ❌ Not descriptive
+let tp = 150;   // ❌ Unclear what "tp" stands for
+```
+
+### If a variable name is made up of multiple words, use the camel case convention
+```JavaScript
+let userName = "John"; 
+let totalPrice = 150;
+let isLoggedIn = true;
+```
