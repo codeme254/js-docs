@@ -71,6 +71,29 @@ let b = 5;
 console.log(a ** b); // 100000
 ```
 
+### Increment Operator
+Increases the variable's value by 1.
+
+It can be used in two ways:
+- Post-increment (`a++`): returns the original value and then increments it
+- Pre-increment (`--a`): increments first then returns the updated value.
+
+```JavaScript
+let x = 5;
+console.log(x++); // 5 (returns first, then increments)
+console.log(x); // 6
+
+let y = 5;
+console.log(++y); // 6 (increments first, then returns)
+```
+
+### Decrement Operator
+Decreases the variable's value by 1.
+
+It can be used in two ways:
+- Post-decrement (`a--`): returns the original value, then decrements.
+- Pre-decrement (`--a`) – decrements first, then returns the updated value.
+
 ## Assignment Operators
 Used to assign values to variables
 
