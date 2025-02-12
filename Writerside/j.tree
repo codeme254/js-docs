@@ -8,4 +8,7 @@
 
     <toc-element topic="starter.md"/>
     <toc-element topic="Including-JavaScript.md"/>
+    <toc-element topic="Variables.md"/>
+    <toc-element topic="Data-Types.md"/>
+    <toc-element topic="Operators.md"/>
 </instance-profile>
