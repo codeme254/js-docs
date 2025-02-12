@@ -11,4 +11,5 @@
     <toc-element topic="Variables.md"/>
     <toc-element topic="Data-Types.md"/>
     <toc-element topic="Operators.md"/>
+    <toc-element topic="Type-Coercion-and-Type-Conversion.md"/>
 </instance-profile>

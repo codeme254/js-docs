@@ -3,11 +3,19 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <variables></variables>
+    <variables>
+        <primary-color>#feb602</primary-color>
+        <link-color>#feb602</link-color>
+        <resizable-sidebar>true</resizable-sidebar>
+        <custom-favicons>logo.png</custom-favicons>
+        <header-logo>logo.png</header-logo>
+    </variables>
     <build-profile instance="j">
         <variables>
             <noindex-content>true</noindex-content>
         </variables>
     </build-profile>
-
+    <footer>
+        <copyright>Dennis Otwoma (https://linkedin.com/in/otwoma)</copyright>
+    </footer>
 </buildprofiles>
