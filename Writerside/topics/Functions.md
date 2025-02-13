@@ -166,7 +166,7 @@ let add = (a, b) => console.log(a + b);
 ```
 
 **If an arrow function has only one line of code in the body and that line happens to be a return statement, we can get
-rid of the `return` keyword: **
+rid of the `return` keyword:**
 
 ```JavaScript
 let add = (a, b) => a + b;
@@ -174,7 +174,7 @@ let add = (a, b) => a + b;
 console.log(add(5, 2));
 ```
 
-**If an arrow function has only one parameter, we can get rid of the parenthesis: **
+**If an arrow function has only one parameter, we can get rid of the parenthesis:**
 
 ```JavaScript
 let square = number => number * number;
