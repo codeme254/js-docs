@@ -1,0 +1,125 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#FEB602" data-link-color="#FEB602" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-13T09:08:36.6385826"><title>Operators | JavaScript</title><script type="application/json" id="virtual-toc-data">[{"id":"arithmetic-operators","level":0,"title":"Arithmetic Operators","anchor":"#arithmetic-operators"},{"id":"assignment-operators","level":0,"title":"Assignment Operators","anchor":"#assignment-operators"},{"id":"comparison-operators","level":0,"title":"Comparison Operators","anchor":"#comparison-operators"},{"id":"logical-operators","level":0,"title":"Logical Operators","anchor":"#logical-operators"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Operators | JavaScript"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="JavaScript Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/operators.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Operators | JavaScript"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/operators.html#webpage",
+    "url": "writerside-documentation/operators.html",
+    "name": "Operators | JavaScript",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "JavaScript Help"
+}</script><!-- End Schema.org --></head><body data-id="Operators" data-main-title="Operators" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>JavaScript  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Operators" id="Operators.md">Operators</h1><p id="c4s3ia_3">Operators in JavaScript are symbols that perform operations on values (<span class="control" id="c4s3ia_12">operands</span>).</p><p id="c4s3ia_4">They are used for calculations, comparisons, and logical operations.</p><p id="c4s3ia_5">Operators in JavaScript are classified into the following categories:</p><ul class="list _bullet" id="c4s3ia_6"><li class="list__item" id="c4s3ia_13"><p><span class="control" id="c4s3ia_20">Arithmetic operators</span>: perform basic mathematical operations.</p></li><li class="list__item" id="c4s3ia_14"><p><span class="control" id="c4s3ia_21">Assignment operators</span>: assign values to variables.</p></li><li class="list__item" id="c4s3ia_15"><p><span class="control" id="c4s3ia_22">Comparison operators</span>: compare values.</p></li><li class="list__item" id="c4s3ia_16"><p><span class="control" id="c4s3ia_23">Logical operators</span>: used for boolean logic.</p></li><li class="list__item" id="c4s3ia_17"><p><span class="control" id="c4s3ia_24">Bitwise operators</span>: perform operations at the binary level.</p></li><li class="list__item" id="c4s3ia_18"><p><span class="control" id="c4s3ia_25">Ternary operators</span></p></li><li class="list__item" id="c4s3ia_19"><p><span class="control" id="c4s3ia_26">Type operators</span></p></li></ul><p id="c4s3ia_7">In this chapter, we will go through arithmetic operators, assignment operators, comparison operators and logical operators, we will later on, in this course, go through bitwise, ternary and type operators.</p><section class="chapter"><h2 id="arithmetic-operators" data-toc="arithmetic-operators">Arithmetic Operators</h2><p id="c4s3ia_27">These are used to perform mathematical operations.</p><section class="chapter"><h3 id="addition" data-toc="addition">+ (addition)</h3><p id="c4s3ia_36">Adds two numbers:</p><div class="code-block" data-lang="javascript">
+let a = 10;
+let b = 5;
+console.log(a + b); // 15
+</div><p id="c4s3ia_38">It can also be used with strings to perform string concatenation:</p><div class="code-block" data-lang="javascript">
+let firstName = &quot;John&quot;;
+let lastName = &quot;Doe&quot;;
+console.log(firstName + lastName); // JohnDoe
+</div></section><section class="chapter"><h3 id="subtraction" data-toc="subtraction">- (subtraction)</h3><p id="c4s3ia_40">Subtracts the right operand from the left:</p><div class="code-block" data-lang="javascript">
+let a = 10;
+let b = 5;
+console.log(a - b); // 5
+</div></section><section class="chapter"><h3 id="multiplication" data-toc="multiplication">* (multiplication)</h3><p id="c4s3ia_42">Calculates the product of two numbers:</p><div class="code-block" data-lang="javascript">
+let a = 10;
+let b = 5;
+console.log(a * b); // 50
+</div></section><section class="chapter"><h3 id="division" data-toc="division">/ (Division)</h3><div class="code-block" data-lang="javascript">
+let a = 10;
+let b = 5;
+console.log(a / b); // 2
+</div></section><section class="chapter"><h3 id="modulus-remainder" data-toc="modulus-remainder">% (modulus/remainder)</h3><p id="c4s3ia_45">Returns the remainder of the division between the left and right operand.</p><div class="code-block" data-lang="javascript">
+let a = 10;
+let b = 5;
+console.log(a % b); // 0
+</div></section><section class="chapter"><h3 id="exponentiation" data-toc="exponentiation">** (Exponentiation)</h3><div class="code-block" data-lang="javascript">
+let a = 10;
+let b = 5;
+console.log(a ** b); // 100000
+</div></section><section class="chapter"><h3 id="increment-operator" data-toc="increment-operator">Increment Operator</h3><p id="c4s3ia_48">Increases the variable's value by 1.</p><p id="c4s3ia_49">It can be used in two ways:</p><ul class="list _bullet" id="c4s3ia_50"><li class="list__item" id="c4s3ia_52"><p>Post-increment (<code class="code" id="c4s3ia_54">a++</code>): returns the original value and then increments it</p></li><li class="list__item" id="c4s3ia_53"><p>Pre-increment (<code class="code" id="c4s3ia_55">--a</code>): increments first then returns the updated value.</p></li></ul><div class="code-block" data-lang="javascript">
+let x = 5;
+console.log(x++); // 5 (returns first, then increments)
+console.log(x); // 6
+
+let y = 5;
+console.log(++y); // 6 (increments first, then returns)
+</div></section><section class="chapter"><h3 id="decrement-operator" data-toc="decrement-operator">Decrement Operator</h3><p id="c4s3ia_56">Decreases the variable's value by 1.</p><p id="c4s3ia_57">It can be used in two ways:</p><ul class="list _bullet" id="c4s3ia_58"><li class="list__item" id="c4s3ia_59"><p>Post-decrement (<code class="code" id="c4s3ia_61">a--</code>): returns the original value, then decrements.</p></li><li class="list__item" id="c4s3ia_60"><p>Pre-decrement (<code class="code" id="c4s3ia_62">--a</code>) &ndash; decrements first, then returns the updated value.</p></li></ul></section></section><section class="chapter"><h2 id="assignment-operators" data-toc="assignment-operators">Assignment Operators</h2><p id="c4s3ia_63">Used to assign values to variables</p><section class="chapter"><h3 id="simple-assignment-operator" data-toc="simple-assignment-operator">= (Simple assignment operator)</h3><p id="c4s3ia_69">Used to assign a value to a variable</p><div class="code-block" data-lang="javascript">
+let x = 5;
+</div></section><section class="chapter"><h3 id="addition-assignment-operator" data-toc="addition-assignment-operator">+= (Addition assignment operator)</h3><p id="c4s3ia_71">Used to add a value to a variable</p><div class="code-block" data-lang="javascript">
+let x = 5;
+x += 3; // x = x + 3 → 8
+</div></section><section class="chapter"><h3 id="subtraction-assignment-operator" data-toc="subtraction-assignment-operator">-= (Subtraction assignment operator)</h3><p id="c4s3ia_73">Subtracts a value from a variable</p><div class="code-block" data-lang="javascript">
+let x = 5;
+x -= 2; // x = x - 2 → 3
+</div></section><section class="chapter"><h3 id="multiplication-assignment-operator" data-toc="multiplication-assignment-operator">*= (Multiplication assignment operator)</h3><p id="c4s3ia_75">Multiples a variable</p><div class="code-block" data-lang="javascript">
+let x = 5;
+x *= 2; // x = x * 2 → 10
+</div></section><section class="chapter"><h3 id="division-assignment-operator" data-toc="division-assignment-operator">/= (Division Assignment Operator)</h3><p id="c4s3ia_77">Divides a variable</p><div class="code-block" data-lang="javascript">
+let x = 15;
+x /= 3; // x = x / 3 → 5
+</div></section></section><section class="chapter"><h2 id="comparison-operators" data-toc="comparison-operators">Comparison Operators</h2><p id="c4s3ia_79">They are used to compare values and they return <code class="code" id="c4s3ia_88">true</code> or <code class="code" id="c4s3ia_89">false</code>.</p><section class="chapter"><h3 id="equality-operator" data-toc="equality-operator"><code class="code" id="c4s3ia_95">==</code> (Equality Operator)</h3><p id="c4s3ia_91">Returns true if the operand on the left is equal to the operand on the right and false otherwise.</p><div class="code-block" data-lang="javascript">
+let a = 10;
+let b = 5;
+console.log(a == b); // false
+console.log(a == 10); // true
+</div><p id="c4s3ia_93">Note: The equality operator ignores the data type of the operands, it only compares the value:</p><div class="code-block" data-lang="javascript">
+console.log(10 == &quot;10&quot;); // true
+</div></section><section class="chapter"><h3 id="strict-equality-operator" data-toc="strict-equality-operator"><code class="code" id="c4s3ia_101">===</code> (Strict equality operator)</h3><p id="c4s3ia_97">Returns true if the operand on the left is equal to the operand on the right and false otherwise.</p><div class="code-block" data-lang="javascript">
+let a = 10;
+let b = 5;
+console.log(a === b); // false
+console.log(a === 10); // true
+</div><p id="c4s3ia_99">Note: The strict equality operator checks the data type as well, not just the values:</p><div class="code-block" data-lang="javascript">
+console.log(10 === &quot;10&quot;); // false
+</div></section><section class="chapter"><h3 id="not-equal-inequality-operator" data-toc="not-equal-inequality-operator"><code class="code" id="c4s3ia_106">!=</code> (Not equal/Inequality operator)</h3><p id="c4s3ia_103">Returns true if the value on the left is not equal to the value on the right and false otherwise.</p><p id="c4s3ia_104">It does not consider the data type of the operands.</p><div class="code-block" data-lang="javascript">
+let a = 10;
+let b = 5;
+console.log(a != b); // true
+console.log(a != 10); // false
+
+console.log(10 != &quot;10&quot;); // false
+</div></section><section class="chapter"><h3 id="strict-not-equal-to-strict-inequality-operator" data-toc="strict-not-equal-to-strict-inequality-operator"><code class="code" id="c4s3ia_111">!==</code> (Strict not equal to/Strict inequality operator)</h3><p id="c4s3ia_108">Returns true if the value on the left is not equal to the value on the right and false otherwise.</p><p id="c4s3ia_109">It compares the data types of the operands.</p><div class="code-block" data-lang="javascript">
+let a = 10;
+let b = 5;
+console.log(a !== b); // true
+console.log(a !== 10); // false
+
+console.log(10 !== &quot;10&quot;); // true
+</div></section><section class="chapter"><h3 id="greater-than" data-toc="greater-than"><code class="code" id="c4s3ia_115">&gt;</code> (Greater than)</h3><p id="c4s3ia_113">Returns true if the operand on the left is greater than the operand on the right and false otherwise.</p><div class="code-block" data-lang="javascript">
+let a = 10;
+let b = 5;
+console.log(a &gt; b); // true
+console.log(b &gt; a); // false
+</div></section><section class="chapter"><h3 id="less-than" data-toc="less-than"><code class="code" id="c4s3ia_119">&lt;</code> (Less than)</h3><p id="c4s3ia_117">Returns true if the operand on the left is less than the operand on the right and false otherwise.</p><div class="code-block" data-lang="javascript">
+let a = 10;
+let b = 5;
+console.log(a &lt; b); // false
+console.log(b &lt; a); // true
+</div></section><section class="chapter"><h3 id="greater-than-or-equal-to" data-toc="greater-than-or-equal-to"><code class="code" id="c4s3ia_123">&gt;=</code> (Greater than or equal to)</h3><p id="c4s3ia_121">Returns true if the operand on the left is greater than or equal to the operand on the right.</p><div class="code-block" data-lang="javascript">
+let a = 10;
+let b = 5;
+console.log(a &gt;= b); // true
+console.log(b &gt;= a); // false
+console.log(10 &gt;= 10); // true
+</div></section><section class="chapter"><h3 id="less-than-or-equal-to" data-toc="less-than-or-equal-to"><code class="code" id="c4s3ia_127">&lt;=</code> (Less than or equal to)</h3><p id="c4s3ia_125">Returns true if the operand on the left is less than or equal to the operand on the right.</p><div class="code-block" data-lang="javascript">
+let a = 10;
+let b = 5;
+console.log(a &lt;= b); // false
+console.log(b &lt;= a); // true
+console.log(10 &lt;= 10); // true
+</div></section></section><section class="chapter"><h2 id="logical-operators" data-toc="logical-operators">Logical Operators</h2><p id="c4s3ia_128">Used for boolean logic.</p><section class="chapter"><h3 id="logical-and-operator" data-toc="logical-and-operator">Logical <code class="code" id="c4s3ia_136">AND</code> Operator (<code class="code" id="c4s3ia_137">&amp;&amp;</code>)</h3><p id="c4s3ia_133">The AND operator returns true only if both operands are true; otherwise, it returns false.</p><div class="code-block" data-lang="javascript">
+console.log(true &amp;&amp; true); // true
+console.log(true &amp;&amp; false); // false
+</div><section class="chapter"><h4 id="truth-table-for-the-and-operator" data-toc="truth-table-for-the-and-operator">Truth table for the AND operator.</h4><div class="table-wrapper"><table class="wide" id="c4s3ia_138"><thead><tr class="ijRowHead" id="c4s3ia_139"><th id="c4s3ia_144"><p>Expression 1</p></th><th id="c4s3ia_145"><p>Expression 2</p></th><th id="c4s3ia_146"><p>Result</p></th></tr></thead><tbody><tr id="c4s3ia_140"><td id="c4s3ia_147"><p>true</p></td><td id="c4s3ia_148"><p>true</p></td><td id="c4s3ia_149"><p>true</p></td></tr><tr id="c4s3ia_141"><td id="c4s3ia_150"><p>true</p></td><td id="c4s3ia_151"><p>false</p></td><td id="c4s3ia_152"><p>false</p></td></tr><tr id="c4s3ia_142"><td id="c4s3ia_153"><p>false</p></td><td id="c4s3ia_154"><p>true</p></td><td id="c4s3ia_155"><p>false</p></td></tr><tr id="c4s3ia_143"><td id="c4s3ia_156"><p>false</p></td><td id="c4s3ia_157"><p>false</p></td><td id="c4s3ia_158"><p>false</p></td></tr></tbody></table></div></section></section><section class="chapter"><h3 id="logical-or-operator" data-toc="logical-or-operator">Logical <code class="code" id="c4s3ia_163">OR</code> Operator (<code class="code" id="c4s3ia_164">||</code>)</h3><p id="c4s3ia_160">The OR operator returns true if at least one of the operands is true; otherwise it returns false.</p><div class="code-block" data-lang="javascript">
+console.log(true || true); // true
+console.log(true || false); // true
+console.log(false || false); // false
+</div><section class="chapter"><h4 id="truth-table-for-the-or-operator" data-toc="truth-table-for-the-or-operator">Truth table for the OR operator</h4><div class="table-wrapper"><table class="wide" id="c4s3ia_165"><thead><tr class="ijRowHead" id="c4s3ia_166"><th id="c4s3ia_171"><p>Expression 1</p></th><th id="c4s3ia_172"><p>Expression 2</p></th><th id="c4s3ia_173"><p>Result</p></th></tr></thead><tbody><tr id="c4s3ia_167"><td id="c4s3ia_174"><p>true</p></td><td id="c4s3ia_175"><p>true</p></td><td id="c4s3ia_176"><p>true</p></td></tr><tr id="c4s3ia_168"><td id="c4s3ia_177"><p>true</p></td><td id="c4s3ia_178"><p>false</p></td><td id="c4s3ia_179"><p>true</p></td></tr><tr id="c4s3ia_169"><td id="c4s3ia_180"><p>false</p></td><td id="c4s3ia_181"><p>true</p></td><td id="c4s3ia_182"><p>true</p></td></tr><tr id="c4s3ia_170"><td id="c4s3ia_183"><p>false</p></td><td id="c4s3ia_184"><p>false</p></td><td id="c4s3ia_185"><p>false</p></td></tr></tbody></table></div></section></section><section class="chapter"><h3 id="logical-not-operator" data-toc="logical-not-operator">Logical <code class="code" id="c4s3ia_189">NOT</code> operator (<code class="code" id="c4s3ia_190">!</code>)</h3><p id="c4s3ia_187">Used to negate boolean value of an expression, it returns true if the expression is false and returns false if the expression is true.</p><div class="code-block" data-lang="javascript">
+console.log(!true); // false
+console.log(!false); // true
+</div></section></section><div class="last-modified">Last modified: 13 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="data-types.html" class="navigation-links__prev">Data Types</a><a href="string-concatenation.html" class="navigation-links__next">String Concatenation</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.js"></script></body></html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#FEB602" data-link-color="#FEB602" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-13T09:08:36.6528939"><title>Including JavaScript | JavaScript</title><script type="application/json" id="virtual-toc-data">[{"id":"internal-javascript","level":0,"title":"Internal JavaScript","anchor":"#internal-javascript"},{"id":"external-javascript","level":0,"title":"External JavaScript","anchor":"#external-javascript"},{"id":"optimizing-script-loading","level":0,"title":"Optimizing script loading","anchor":"#optimizing-script-loading"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Including JavaScript | JavaScript"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="JavaScript Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/including-javascript.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Including JavaScript | JavaScript"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/including-javascript.html#webpage",
+    "url": "writerside-documentation/including-javascript.html",
+    "name": "Including JavaScript | JavaScript",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "JavaScript Help"
+}</script><!-- End Schema.org --></head><body data-id="Including-JavaScript" data-main-title="Including JavaScript" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>JavaScript  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Including-JavaScript" id="Including-JavaScript.md">Including JavaScript</h1><p id="-5vhjw_3">There are two main ways of adding JavaScript to HTML:</p><ul class="list _bullet" id="-5vhjw_4"><li class="list__item" id="-5vhjw_8"><p>Internal JavaScript</p></li><li class="list__item" id="-5vhjw_9"><p>External JavaScript</p></li></ul><section class="chapter"><h2 id="internal-javascript" data-toc="internal-javascript">Internal JavaScript</h2><p id="-5vhjw_10">Here, JavaScript is written inside a <code class="code" id="-5vhjw_13">&lt;script&gt;</code> tag within the HTML file.</p><div class="code-block" data-lang="markup">
+&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;JavaScript&lt;/h1&gt;
+    &lt;script&gt;
+      console.log(&quot;Hello, world!&quot;);
+      console.log(&quot;JavaScript is fun&quot;)
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</div><p id="-5vhjw_12">Placing scripts at the bottom of the <code class="code" id="-5vhjw_14">&lt;body&gt;</code> element improves the display speed; because script interpretation slows down the display.</p></section><section class="chapter"><h2 id="external-javascript" data-toc="external-javascript">External JavaScript</h2><p id="-5vhjw_15">Here, JavaScript is stored in a separate <code class="code" id="-5vhjw_20">.js</code> file and linked to the HTML document using the <code class="code" id="-5vhjw_21">&lt;script&gt;</code> tag with a src attribute.</p><p id="-5vhjw_16">index.html:</p><div class="code-block" data-lang="markup">
+&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;JavaScript&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</div><p id="-5vhjw_18">app.js</p><div class="code-block" data-lang="javascript">
+console.log(&quot;Hello, world!&quot;);
+console.log(&quot;JavaScript is fun&quot;);
+</div></section><section class="chapter"><h2 id="optimizing-script-loading" data-toc="optimizing-script-loading">Optimizing script loading</h2><p id="-5vhjw_22">JavaScript can block page rendering if not loaded correctly.</p><p id="-5vhjw_23">The browser parses our HTML code line by line and when it comes across a resource that needs to be downloaded to the page e.g. an image, it sends a request to the server to download this resource.</p><p id="-5vhjw_24">However, when it comes across the script tags to download JavaScript, it stops until the JavaScript has been downloaded, it then executes this JavaScript after it has been downloaded and then continues parsing the HTML.</p><p id="-5vhjw_25">This can end up hurting performance.</p><p id="-5vhjw_26">To improve performance, use:</p><ol class="list _decimal" id="-5vhjw_27" type="1"><li class="list__item" id="-5vhjw_37"><p><span class="control" id="-5vhjw_38">defer</span> keyword</p></li></ol><ul class="list _bullet" id="-5vhjw_28"><li class="list__item" id="-5vhjw_39"><p>This ensures that scripts are loaded after the HTML is fully loaded.</p></li><li class="list__item" id="-5vhjw_40"><p>Example:</p></li></ul><div class="code-block" data-lang="javascript">
+&lt;script src=&quot;app.js&quot; defer&gt;&lt;/script&gt;
+</div><ol class="list _decimal" id="-5vhjw_30" type="1" start="2"><li class="list__item" id="-5vhjw_41"><p>The <span class="control" id="-5vhjw_42">async</span> keyword</p></li></ol><ul class="list _bullet" id="-5vhjw_31"><li class="list__item" id="-5vhjw_43"><p>Loads scripts asynchronously and runs them as soon as they are downloaded.</p></li><li class="list__item" id="-5vhjw_44"><p>May execute JavaScript out of order.</p></li></ul><div class="code-block" data-lang="javascript">
+&lt;script src=&quot;script.js&quot; async&gt;&lt;/script&gt;
+</div><ol class="list _decimal" id="-5vhjw_33" type="1" start="3"><li class="list__item" id="-5vhjw_45"><p>The script tag at the end of the page.</p></li></ol><ul class="list _bullet" id="-5vhjw_34"><li class="list__item" id="-5vhjw_46"><p>Put the script tag at the very end of the page before the closing body tag.</p></li></ul><div class="code-block" data-lang="markup">
+...
+    &lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</div><p id="-5vhjw_36">Avoid using the async keyword unless you are absolutely sure that it fits your needs, stick to the defer keyword or using the script tag at the end of the HTML document before the closing body tag.</p></section><div class="last-modified">Last modified: 13 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="starter.html" class="navigation-links__prev">Introduction</a><a href="variables.html" class="navigation-links__next">Variables</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.js"></script></body></html>
