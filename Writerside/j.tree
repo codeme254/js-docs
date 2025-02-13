@@ -19,4 +19,7 @@
         <toc-element topic="Loops.md"/>
     </toc-element>
     <toc-element topic="Functions.md"/>
+    <toc-element topic="Basic-Data-Structures.md">
+        <toc-element topic="Arrays.md"/>
+    </toc-element>
 </instance-profile>
