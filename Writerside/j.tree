@@ -12,4 +12,8 @@
     <toc-element topic="Data-Types.md"/>
     <toc-element topic="Operators.md"/>
     <toc-element topic="Type-Coercion-and-Type-Conversion.md"/>
+    <toc-element topic="Control-Flow.md">
+        <toc-element topic="Conditionals.md"/>
+        <toc-element topic="Loops.md"/>
+    </toc-element>
 </instance-profile>
