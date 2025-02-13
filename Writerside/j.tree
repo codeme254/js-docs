@@ -16,4 +16,5 @@
         <toc-element topic="Conditionals.md"/>
         <toc-element topic="Loops.md"/>
     </toc-element>
+    <toc-element topic="Functions.md"/>
 </instance-profile>
