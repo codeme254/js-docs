@@ -9,6 +9,7 @@
         <resizable-sidebar>true</resizable-sidebar>
         <custom-favicons>logo.png</custom-favicons>
         <header-logo>logo.png</header-logo>
+        <custom-css>custom.css</custom-css>
     </variables>
     <build-profile instance="j">
         <variables>
