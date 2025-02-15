@@ -25,4 +25,11 @@
         <toc-element topic="Sets.md"/>
         <toc-element topic="Map.md"/>
     </toc-element>
+    <toc-element topic="Document-Object-Model.md">
+        <toc-element topic="Acessing-Finding-Dom-Elements.md"/>
+        <toc-element topic="Changing-DOM-Elements.md"/>
+        <toc-element topic="DOM-Events.md"/>
+        <toc-element topic="DOM-Event-Listener-Method.md"/>
+        <toc-element topic="Event-Propagation.md"/>
+    </toc-element>
 </instance-profile>
