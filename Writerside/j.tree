@@ -22,5 +22,6 @@
     <toc-element topic="Basic-Data-Structures.md">
         <toc-element topic="Arrays.md"/>
         <toc-element topic="Objects.md"/>
+        <toc-element topic="Sets.md"/>
     </toc-element>
 </instance-profile>
