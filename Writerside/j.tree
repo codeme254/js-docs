@@ -23,5 +23,6 @@
         <toc-element topic="Arrays.md"/>
         <toc-element topic="Objects.md"/>
         <toc-element topic="Sets.md"/>
+        <toc-element topic="Map.md"/>
     </toc-element>
 </instance-profile>
