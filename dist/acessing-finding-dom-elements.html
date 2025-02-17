@@ -1,0 +1,49 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#FEB602" data-link-color="#FEB602" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-17T06:46:46.4152285"><title>Accessing/Finding Dom Elements | JavaScript</title><script type="application/json" id="virtual-toc-data">[{"id":"methods-for-accessing-dom-elements","level":0,"title":"Methods for accessing DOM elements","anchor":"#methods-for-accessing-dom-elements"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.css" rel="stylesheet"><link href="static/custom.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Accessing/Finding Dom Elements | JavaScript"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="JavaScript Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/acessing-finding-dom-elements.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Accessing/Finding Dom Elements | JavaScript"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/acessing-finding-dom-elements.html#webpage",
+    "url": "writerside-documentation/acessing-finding-dom-elements.html",
+    "name": "Accessing/Finding Dom Elements | JavaScript",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "JavaScript Help"
+}</script><!-- End Schema.org --></head><body data-id="Acessing-Finding-Dom-Elements" data-main-title="Accessing/Finding Dom Elements" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="Document-Object-Model.md|Document Object Model"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>JavaScript  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Acessing-Finding-Dom-Elements" id="Acessing-Finding-Dom-Elements.md">Accessing/Finding Dom Elements</h1><p id="mguogb_3">To access any element in an HTML page, we first start by accessing the <code class="code" id="mguogb_6">document</code> object.</p><p id="mguogb_4">The document object is the owner of all other objects on the page.</p><section class="chapter"><h2 id="methods-for-accessing-dom-elements" data-toc="methods-for-accessing-dom-elements">Methods for accessing DOM elements</h2><section class="chapter"><h3 id="document-getelementbyid-elementid" data-toc="document-getelementbyid-elementid"><code class="code" id="mguogb_16">document.getElementById(elementId)</code></h3><p id="mguogb_13">Finds an element with id equivalent to <code class="code" id="mguogb_17">elementId</code>.</p><div class="code-block" data-lang="markup">
+&lt;button id=&quot;my-button&quot;&gt;Click Me&lt;/button&gt;
+</div><div class="code-block" data-lang="javascript">
+const button = document.getElementById(&quot;my-button&quot;);
+console.log(button); // &lt;button id=&quot;my-button&quot;&gt;Click Me&lt;/button&gt;
+</div></section><section class="chapter"><h3 id="document-getelementsbytagname-name" data-toc="document-getelementsbytagname-name"><code class="code" id="mguogb_24">document.getElementsByTagName(name)</code></h3><p id="mguogb_19">Finds all the elements that match the tag name passed, e.g., finding all paragraph elements in a page.</p><p id="mguogb_20">It returns a NodeList of all elements that match the tag name passed.</p><p id="mguogb_21">You can index the specific element you want from this element the same way you would index an array.</p><div class="code-block" data-lang="markup">
+&lt;p&gt;Hello, World&lt;/p&gt;
+&lt;p&gt;JavaScript is awesome&lt;/p&gt;
+&lt;p&gt;JavaScript is great&lt;/p&gt;
+</div><div class="code-block" data-lang="javascript">
+const paragraphs = document.getElementsByTagName(&quot;p&quot;);
+console.log(paragraphs); // [p, p, p]
+</div></section><section class="chapter"><h3 id="document-getelementsbyclassname-classname" data-toc="document-getelementsbyclassname-classname"><code class="code" id="mguogb_30">document.getElementsByClassName(className)</code></h3><p id="mguogb_26">Finds and returns a NodeList of all HTML elements with class attribute similar to the class specified.</p><p id="mguogb_27">You can index the specific element you want from this element the same way you would index an array.</p><div class="code-block" data-lang="markup">
+&lt;p class=&quot;text&quot;&gt;Hello, World&lt;/p&gt;
+&lt;p class=&quot;text&quot;&gt;JavaScript is awesome&lt;/p&gt;
+&lt;p&gt;JavaScript is great&lt;/p&gt;
+</div><div class="code-block" data-lang="javascript">
+const texts = document.getElementsByClassName(&quot;text&quot;);
+console.log(texts); // [p.text, p.text]
+</div></section><section class="chapter"><h3 id="document-queryselector-selector" data-toc="document-queryselector-selector"><code class="code" id="mguogb_35">document.querySelector(selector)</code></h3><p id="mguogb_32">Selects the first element in the document that matches a specified CSS selector, id or tag name.</p><div class="code-block" data-lang="markup">
+&lt;p class=&quot;text&quot;&gt;Hello, World&lt;/p&gt;
+&lt;p class=&quot;text&quot;&gt;JavaScript is awesome&lt;/p&gt;
+&lt;p&gt;JavaScript is great&lt;/p&gt;
+</div><div class="code-block" data-lang="javascript">
+const firstText = document.querySelector(&quot;.text&quot;);
+console.log(firstText);
+</div></section><section class="chapter"><h3 id="document-queryselectorall-selector" data-toc="document-queryselectorall-selector"><code class="code" id="mguogb_40">document.querySelectorAll(selector)</code></h3><p id="mguogb_37">Selects all elements in the document that match the specified class, id or tag name and returns a node list of them.</p><div class="code-block" data-lang="markup">
+&lt;p class=&quot;text&quot;&gt;Hello, World&lt;/p&gt;
+&lt;p class=&quot;text&quot;&gt;JavaScript is awesome&lt;/p&gt;
+&lt;p&gt;JavaScript is great&lt;/p&gt;
+</div><div class="code-block" data-lang="javascript">
+const paragraphs = document.querySelectorAll('p');
+console.log(paragraphs); // [p.text, p.text, p]
+</div></section></section><div class="last-modified">Last modified: 17 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="document-object-model.html" class="navigation-links__prev">Document Object Model</a><a href="changing-dom-elements.html" class="navigation-links__next">Changing DOM Elements</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.js"></script></body></html>
