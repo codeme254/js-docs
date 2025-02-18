@@ -37,5 +37,11 @@
         <toc-element topic="let-and-const-for-block-scoped-variables.md"/>
         <toc-element topic="Arrow-functions.md"/>
         <toc-element topic="Template-literals.md"/>
+        <toc-element topic="Default-Parameters.md"/>
+        <toc-element topic="Spread-Operator.md"/>
+        <toc-element topic="Rest-Operator.md"/>
+        <toc-element topic="Destructuring.md"/>
+        <toc-element topic="Object-Literal-Enhancements.md"/>
+        <toc-element topic="ES6-Modules.md"/>
     </toc-element>
 </instance-profile>
