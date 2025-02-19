@@ -44,4 +44,9 @@
         <toc-element topic="Object-Literal-Enhancements.md"/>
         <toc-element topic="ES6-Modules.md"/>
     </toc-element>
+    <toc-element topic="Asynchronous-JavaScript.md">
+        <toc-element topic="Callbacks.md"/>
+        <toc-element topic="Promises.md"/>
+        <toc-element topic="Consuming-Promises-With-Async-Await.md"/>
+    </toc-element>
 </instance-profile>
