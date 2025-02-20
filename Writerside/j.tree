@@ -58,4 +58,5 @@
         <toc-element topic="Static-Methods-and-Properties.md"/>
         <toc-element topic="Getters-and-Setters.md"/>
     </toc-element>
+    <toc-element topic="Introduction-to-fetch-and-HTTP-Requests.md"/>
 </instance-profile>
