@@ -1,5 +1,5 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
-<html lang="en-US" data-preset="contrast" data-primary-color="#FEB602" data-link-color="#FEB602" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-20T06:08:54.9204161"><title>Object Literal Enhancements | JavaScript</title><script type="application/json" id="virtual-toc-data">[{"id":"shorthand-property-names","level":0,"title":"Shorthand Property Names","anchor":"#shorthand-property-names"},{"id":"method-shorthand","level":0,"title":"Method shorthand","anchor":"#method-shorthand"},{"id":"computed-property-names","level":0,"title":"Computed Property Names","anchor":"#computed-property-names"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.css" rel="stylesheet"><link href="static/custom.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Object Literal Enhancements | JavaScript"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="JavaScript Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/object-literal-enhancements.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Object Literal Enhancements | JavaScript"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+<html lang="en-US" data-preset="contrast" data-primary-color="#FEB602" data-link-color="#FEB602" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-21T05:38:49.9089411"><title>Object Literal Enhancements | JavaScript</title><script type="application/json" id="virtual-toc-data">[{"id":"shorthand-property-names","level":0,"title":"Shorthand Property Names","anchor":"#shorthand-property-names"},{"id":"method-shorthand","level":0,"title":"Method shorthand","anchor":"#method-shorthand"},{"id":"computed-property-names","level":0,"title":"Computed Property Names","anchor":"#computed-property-names"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.css" rel="stylesheet"><link href="static/custom.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Object Literal Enhancements | JavaScript"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="JavaScript Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/object-literal-enhancements.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Object Literal Enhancements | JavaScript"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
     "@context": "http://schema.org",
     "@type": "WebPage",
     "@id": "writerside-documentation/object-literal-enhancements.html#webpage",
@@ -13,21 +13,21 @@
     "@id": "writerside-documentation/#website",
     "url": "writerside-documentation/",
     "name": "JavaScript Help"
-}</script><!-- End Schema.org --></head><body data-id="Object-Literal-Enhancements" data-main-title="Object Literal Enhancements" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="ES6.md|ES6"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>JavaScript  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Object-Literal-Enhancements" id="Object-Literal-Enhancements.md">Object Literal Enhancements</h1><p id="in0ohs_3">ES6 introduced several enhancements to object literals making it easier and more concise to create and work with objects.</p><p id="in0ohs_4">These enhancements include:</p><section class="chapter"><h2 id="shorthand-property-names" data-toc="shorthand-property-names">Shorthand Property Names</h2><p id="in0ohs_8">If a variable name matches the property name, you can omit the value assignment.</p><p id="in0ohs_9"><span class="control" id="in0ohs_13">Before ES6:</span></p><div class="code-block" data-lang="javascript">
+}</script><!-- End Schema.org --></head><body data-id="Object-Literal-Enhancements" data-main-title="Object Literal Enhancements" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="ES6.md|ES6"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>JavaScript  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Object-Literal-Enhancements" id="Object-Literal-Enhancements.md">Object Literal Enhancements</h1><p id="uok85v_3">ES6 introduced several enhancements to object literals making it easier and more concise to create and work with objects.</p><p id="uok85v_4">These enhancements include:</p><section class="chapter"><h2 id="shorthand-property-names" data-toc="shorthand-property-names">Shorthand Property Names</h2><p id="uok85v_8">If a variable name matches the property name, you can omit the value assignment.</p><p id="uok85v_9"><span class="control" id="uok85v_13">Before ES6:</span></p><div class="code-block" data-lang="javascript">
 const firstName = &quot;John&quot;;
 const lastName = &quot;Doe&quot;;
 const age = 25;
 
 const user = { firstName: firstName, lastName: lastName, age: age }; //correct
 console.log(user); // { firstName: 'John', lastName: 'Doe', age: 25 }
-</div><p id="in0ohs_11"><span class="control" id="in0ohs_14">After ES6:</span></p><div class="code-block" data-lang="javascript">
+</div><p id="uok85v_11"><span class="control" id="uok85v_14">After ES6:</span></p><div class="code-block" data-lang="javascript">
 const firstName = &quot;John&quot;;
 const lastName = &quot;Doe&quot;;
 const age = 25;
 
 const user = { firstName, lastName, age }; // correct
 console.log(user); // { firstName: 'John', lastName: 'Doe', age: 25 }
-</div></section><section class="chapter"><h2 id="method-shorthand" data-toc="method-shorthand">Method shorthand</h2><p id="in0ohs_15">You can define methods in an object without using the <code class="code" id="in0ohs_20">function</code> keyword.</p><p id="in0ohs_16"><span class="control" id="in0ohs_21">Before ES6:</span></p><div class="code-block" data-lang="javascript">
+</div></section><section class="chapter"><h2 id="method-shorthand" data-toc="method-shorthand">Method shorthand</h2><p id="uok85v_15">You can define methods in an object without using the <code class="code" id="uok85v_20">function</code> keyword.</p><p id="uok85v_16"><span class="control" id="uok85v_21">Before ES6:</span></p><div class="code-block" data-lang="javascript">
 const user = {
   firstName: &quot;John&quot;,
   lastName: &quot;Doe&quot;,
@@ -37,7 +37,7 @@ const user = {
   },
 };
 user.introduction();
-</div><p id="in0ohs_18"><span class="control" id="in0ohs_22">After ES6:</span></p><div class="code-block" data-lang="javascript">
+</div><p id="uok85v_18"><span class="control" id="uok85v_22">After ES6:</span></p><div class="code-block" data-lang="javascript">
 const user = {
   firstName: &quot;John&quot;,
   lastName: &quot;Doe&quot;,
@@ -47,7 +47,7 @@ const user = {
   },
 };
 user.introduction();
-</div></section><section class="chapter"><h2 id="computed-property-names" data-toc="computed-property-names">Computed Property Names</h2><p id="in0ohs_23">You can use expressions as property names by wrapping them in square brackets <code class="code" id="in0ohs_25">[]</code>.</p><div class="code-block" data-lang="javascript">
+</div></section><section class="chapter"><h2 id="computed-property-names" data-toc="computed-property-names">Computed Property Names</h2><p id="uok85v_23">You can use expressions as property names by wrapping them in square brackets <code class="code" id="uok85v_25">[]</code>.</p><div class="code-block" data-lang="javascript">
 const user = {
   [&quot;first&quot; + &quot;Name&quot;]: &quot;John&quot;,
   lastName: &quot;Doe&quot;,
@@ -55,4 +55,4 @@ const user = {
 };
 console.log(user); // { firstName: 'John', lastName: 'Doe', age: 25 }
 
-</div></section><div class="last-modified">Last modified: 20 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="destructuring.html" class="navigation-links__prev">Destructuring</a><a href="es6-modules.html" class="navigation-links__next">ES6 Modules</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.js"></script></body></html>
+</div></section><div class="last-modified">Last modified: 21 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="destructuring.html" class="navigation-links__prev">Destructuring</a><a href="es6-modules.html" class="navigation-links__next">ES6 Modules</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.js"></script></body></html>

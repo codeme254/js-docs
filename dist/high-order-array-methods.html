@@ -1,0 +1,63 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#FEB602" data-link-color="#FEB602" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-21T05:38:49.9238606"><title>High Order Array Methods | JavaScript</title><script type="application/json" id="virtual-toc-data">[{"id":"foreach","level":0,"title":"forEach","anchor":"#foreach"},{"id":"map","level":0,"title":"map","anchor":"#map"},{"id":"filter","level":0,"title":"filter","anchor":"#filter"},{"id":"reduce","level":0,"title":"reduce","anchor":"#reduce"},{"id":"find","level":0,"title":"find","anchor":"#find"},{"id":"findindex","level":0,"title":"findIndex","anchor":"#findindex"},{"id":"some","level":0,"title":"some","anchor":"#some"},{"id":"every","level":0,"title":"every","anchor":"#every"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.css" rel="stylesheet"><link href="static/custom.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="High Order Array Methods | JavaScript"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="JavaScript Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/high-order-array-methods.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="High Order Array Methods | JavaScript"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/high-order-array-methods.html#webpage",
+    "url": "writerside-documentation/high-order-array-methods.html",
+    "name": "High Order Array Methods | JavaScript",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/#website",
+    "url": "writerside-documentation/",
+    "name": "JavaScript Help"
+}</script><!-- End Schema.org --></head><body data-id="High-Order-Array-Methods" data-main-title="High Order Array Methods" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="Basic-Data-Structures.md|Basic Data Structures///Arrays.md|Arrays"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>JavaScript  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="High-Order-Array-Methods" id="High-Order-Array-Methods.md">High Order Array Methods</h1><p id="-svvzrk_3">JavaScript provides a range of powerful tools for working with arrays, and higher-order methods are among the most versatile and expressive.</p><p id="-svvzrk_4">These methods simplify operations on arrays by allowing us to apply functions to elements directly, improving both readability and maintainability.</p><p id="-svvzrk_5">They include:</p><section class="chapter"><h2 id="foreach" data-toc="foreach"><code class="code" id="-svvzrk_19">forEach</code></h2><p id="-svvzrk_15">Executes a function on each array element but does not return anything.</p><p id="-svvzrk_16">Best used when you want to perform an action on each item</p><p id="-svvzrk_17">It does not create a new array.</p><div class="code-block" data-lang="javascript">
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach((num) =&gt; {
+  console.log(num * 2);
+});
+// Output: 2, 4, 6, 8, 10
+</div></section><section class="chapter"><h2 id="map" data-toc="map"><code class="code" id="-svvzrk_25">map</code></h2><p id="-svvzrk_21">The <code class="code" id="-svvzrk_26">map()</code> method creates a new array populated with the results of calling a provided function on every element in the calling array.</p><p id="-svvzrk_22">Best for transforming array elements without modifying the original array.</p><p id="-svvzrk_23">It returns a new array.</p><div class="code-block" data-lang="javascript">
+const numbers = [1, 2, 3, 4, 5];
+
+const doubled = numbers.map((num) =&gt; num * 2);
+console.log(doubled);
+// Output: [2, 4, 6, 8, 10]
+</div></section><section class="chapter"><h2 id="filter" data-toc="filter"><code class="code" id="-svvzrk_32">filter</code></h2><p id="-svvzrk_28">The <code class="code" id="-svvzrk_33">filter()</code> method creates a new array with all elements that pass the test implemented by the provided function.</p><p id="-svvzrk_29">Best for selecting specific elements from an array.</p><p id="-svvzrk_30">It returns a new array</p><div class="code-block" data-lang="javascript">
+const numbers = [1, 2, 3, 4, 5];
+
+const evenNumbers = numbers.filter((num) =&gt; num % 2 === 0);
+console.log(evenNumbers);
+// Output: [2, 4]
+</div></section><section class="chapter"><h2 id="reduce" data-toc="reduce"><code class="code" id="-svvzrk_39">reduce</code></h2><p id="-svvzrk_35">The <code class="code" id="-svvzrk_40">reduce()</code> method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.</p><p id="-svvzrk_36">Best for calculating totals, aggregations, or combining values.</p><p id="-svvzrk_37">It does not return a new array, but it returns the value that the original array has been reduced to.</p><div class="code-block" data-lang="javascript">
+const numbers = [1, 2, 3, 4, 5];
+
+const sum = numbers.reduce((acc, num) =&gt; acc + num, 0);
+console.log(sum);
+// Output: 15
+</div></section><section class="chapter"><h2 id="find" data-toc="find"><code class="code" id="-svvzrk_45">find</code></h2><p id="-svvzrk_42">The <code class="code" id="-svvzrk_46">find()</code> method returns the value of the first element in the array that satisfies the provided testing function. Otherwise, it returns undefined.</p><p id="-svvzrk_43">Does not return new but returns the found number instead:</p><div class="code-block" data-lang="javascript">
+const numbers = [1, 2, 3, 4];
+const found = numbers.find((num) =&gt; num === 3);
+console.log(found); // Output: 3
+</div></section><section class="chapter"><h2 id="findindex" data-toc="findindex"><code class="code" id="-svvzrk_50">findIndex</code></h2><p id="-svvzrk_48">Returns the index of the first element that matches a condition.</p><div class="code-block" data-lang="javascript">
+const numbers = [10, 20, 30, 40, 50];
+
+const index = numbers.findIndex((num) =&gt; num &gt; 25);
+console.log(index);
+// 2 
+</div></section><section class="chapter"><h2 id="some" data-toc="some"><code class="code" id="-svvzrk_55">some</code></h2><p id="-svvzrk_52">Checks if at least one element passes a condition.</p><p id="-svvzrk_53">If so, it returns true, otherwise, it returns false.</p><div class="code-block" data-lang="javascript">
+const numbers = [1, 3, 5, 7];
+
+const hasEven = numbers.some((num) =&gt; num % 2 === 0);
+console.log(hasEven);
+// false
+</div></section><section class="chapter"><h2 id="every" data-toc="every"><code class="code" id="-svvzrk_60">every</code></h2><p id="-svvzrk_57">Checks if all elements in an array pass a condition.</p><p id="-svvzrk_58">If so, it returns true, otherwise it returns false.</p><div class="code-block" data-lang="javascript">
+const numbers = [2, 4, 6, 8];
+
+const allEven = numbers.every((num) =&gt; num % 2 === 0);
+console.log(allEven);
+// true
+</div></section><div class="last-modified">Last modified: 21 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="arrays.html" class="navigation-links__prev">Arrays</a><a href="objects.html" class="navigation-links__next">Objects</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.js"></script></body></html>

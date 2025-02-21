@@ -1,5 +1,5 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
-<html lang="en-US" data-preset="contrast" data-primary-color="#FEB602" data-link-color="#FEB602" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-20T06:08:54.9732474"><title>Functions | JavaScript</title><script type="application/json" id="virtual-toc-data">[{"id":"parameters-vs-arguments","level":0,"title":"Parameters vs Arguments","anchor":"#parameters-vs-arguments"},{"id":"function-return-values","level":0,"title":"Function Return Values","anchor":"#function-return-values"},{"id":"categories-of-functions","level":0,"title":"Categories of Functions","anchor":"#categories-of-functions"},{"id":"types-of-functions-in-javascript","level":0,"title":"Types of functions in JavaScript","anchor":"#types-of-functions-in-javascript"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.css" rel="stylesheet"><link href="static/custom.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Functions | JavaScript"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="JavaScript Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/functions.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Functions | JavaScript"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+<html lang="en-US" data-preset="contrast" data-primary-color="#FEB602" data-link-color="#FEB602" data-resizable-sidebar="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2025-02-21T05:38:49.9490143"><title>Functions | JavaScript</title><script type="application/json" id="virtual-toc-data">[{"id":"parameters-vs-arguments","level":0,"title":"Parameters vs Arguments","anchor":"#parameters-vs-arguments"},{"id":"function-return-values","level":0,"title":"Function Return Values","anchor":"#function-return-values"},{"id":"categories-of-functions","level":0,"title":"Categories of Functions","anchor":"#categories-of-functions"},{"id":"types-of-functions-in-javascript","level":0,"title":"Types of functions in JavaScript","anchor":"#types-of-functions-in-javascript"}]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.css" rel="stylesheet"><link href="static/custom.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="16x16" href="images/logo.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Functions | JavaScript"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="JavaScript Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/functions.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Functions | JavaScript"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
     "@context": "http://schema.org",
     "@type": "WebPage",
     "@id": "writerside-documentation/functions.html#webpage",
@@ -13,7 +13,7 @@
     "@id": "writerside-documentation/#website",
     "url": "writerside-documentation/",
     "name": "JavaScript Help"
-}</script><!-- End Schema.org --></head><body data-id="Functions" data-main-title="Functions" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>JavaScript  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Functions" id="Functions.md">Functions</h1><p id="lv82ew_3">A function is a block of code that performs a specific task.</p><p id="lv82ew_4">Functions help in writing modular, maintainable and reusable code.</p><p id="lv82ew_5"><span class="control" id="lv82ew_15">In JavaScript, functions are first-class citizens; this means that they can be assigned to variables, passed as arguments, returned from other functions, stored in data structures and even created dynamically.</span></p><p id="lv82ew_6">The basic syntax for declaring a function in JavaScript is as follows:</p><div class="code-block" data-lang="javascript">
+}</script><!-- End Schema.org --></head><body data-id="Functions" data-main-title="Functions" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs=""><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>JavaScript  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Functions" id="Functions.md">Functions</h1><p id="f98abv_3">A function is a block of code that performs a specific task.</p><p id="f98abv_4">Functions help in writing modular, maintainable and reusable code.</p><p id="f98abv_5"><span class="control" id="f98abv_15">In JavaScript, functions are first-class citizens; this means that they can be assigned to variables, passed as arguments, returned from other functions, stored in data structures and even created dynamically.</span></p><p id="f98abv_6">The basic syntax for declaring a function in JavaScript is as follows:</p><div class="code-block" data-lang="javascript">
 function functionName() {
   // function body
 }
@@ -21,27 +21,27 @@ function functionName() {
 function printHello() {
   console.log(&quot;Hello, world&quot;);
 }
-</div><p id="lv82ew_9">To use a function, you must <span class="control" id="lv82ew_16">call</span>/<span class="control" id="lv82ew_17">invoke</span> the function as shown:</p><div class="code-block" data-lang="javascript">
+</div><p id="f98abv_9">To use a function, you must <span class="control" id="f98abv_16">call</span>/<span class="control" id="f98abv_17">invoke</span> the function as shown:</p><div class="code-block" data-lang="javascript">
 function printHello() {
   console.log(&quot;Hello, world&quot;);
 }
 
 // calling/invoking a function
 printHello();
-</div><section class="chapter"><h2 id="parameters-vs-arguments" data-toc="parameters-vs-arguments">Parameters vs Arguments</h2><p id="lv82ew_18">A parameter is a variable declared in a function definition and acts as a placeholder for the value that will be passed to the function when the function is being called.</p><p id="lv82ew_19">An argument is the actual value passed to a function when it is called, it provides the data that the function or the method will operate on.</p><div class="code-block" data-lang="javascript">
+</div><section class="chapter"><h2 id="parameters-vs-arguments" data-toc="parameters-vs-arguments">Parameters vs Arguments</h2><p id="f98abv_18">A parameter is a variable declared in a function definition and acts as a placeholder for the value that will be passed to the function when the function is being called.</p><p id="f98abv_19">An argument is the actual value passed to a function when it is called, it provides the data that the function or the method will operate on.</p><div class="code-block" data-lang="javascript">
 function greet(name) { // name is a parameter
   console.log(`Hello ${name}`);
 }
 
 greet(&quot;John Doe&quot;); // John Doe is an argument
-</div></section><section class="chapter"><h2 id="function-return-values" data-toc="function-return-values">Function Return Values</h2><p id="lv82ew_21">A function can return a value using the return keyword.</p><div class="code-block" data-lang="javascript">
+</div></section><section class="chapter"><h2 id="function-return-values" data-toc="function-return-values">Function Return Values</h2><p id="f98abv_21">A function can return a value using the return keyword.</p><div class="code-block" data-lang="javascript">
 function add(number1, number2) {
   return number1 + number2;
 }
 
 let sum = add(35, 23);
 console.log(sum);
-</div></section><section class="chapter"><h2 id="categories-of-functions" data-toc="categories-of-functions">Categories of Functions</h2><p id="lv82ew_23">In programming, functions can be categorized as follows:</p><ul class="list _bullet" id="lv82ew_24"><li class="list__item" id="lv82ew_29"><p>Functions that don't take parameter(s) and don't return a value</p></li><li class="list__item" id="lv82ew_30"><p>Functions that don't take parameter(s) but return a value</p></li><li class="list__item" id="lv82ew_31"><p>Functions that take parameter(s) but don't return a value.</p></li><li class="list__item" id="lv82ew_32"><p>Functions that take parameter(s) and return a value.</p></li></ul><section class="chapter"><h3 id="functions-that-don-t-take-parameter-s-and-don-t-return-a-value" data-toc="functions-that-don-t-take-parameter-s-and-don-t-return-a-value">Functions that don't take parameter(s) and don't return a value</h3><p id="lv82ew_33">As the name suggests, these functions don't take any parameter(s) and don't return any values.</p><div class="code-block" data-lang="javascript">
+</div></section><section class="chapter"><h2 id="categories-of-functions" data-toc="categories-of-functions">Categories of Functions</h2><p id="f98abv_23">In programming, functions can be categorized as follows:</p><ul class="list _bullet" id="f98abv_24"><li class="list__item" id="f98abv_29"><p>Functions that don't take parameter(s) and don't return a value</p></li><li class="list__item" id="f98abv_30"><p>Functions that don't take parameter(s) but return a value</p></li><li class="list__item" id="f98abv_31"><p>Functions that take parameter(s) but don't return a value.</p></li><li class="list__item" id="f98abv_32"><p>Functions that take parameter(s) and return a value.</p></li></ul><section class="chapter"><h3 id="functions-that-don-t-take-parameter-s-and-don-t-return-a-value" data-toc="functions-that-don-t-take-parameter-s-and-don-t-return-a-value">Functions that don't take parameter(s) and don't return a value</h3><p id="f98abv_33">As the name suggests, these functions don't take any parameter(s) and don't return any values.</p><div class="code-block" data-lang="javascript">
 function add() {
   let a = 55;
   let b = 68;
@@ -49,7 +49,7 @@ function add() {
 }
 
 add();
-</div></section><section class="chapter"><h3 id="functions-that-don-t-take-parameter-s-but-return-a-value" data-toc="functions-that-don-t-take-parameter-s-but-return-a-value">Functions that don't take parameter(s) but return a value</h3><p id="lv82ew_35">These functions don't take any parameter(s), but they return a value.</p><div class="code-block" data-lang="javascript">
+</div></section><section class="chapter"><h3 id="functions-that-don-t-take-parameter-s-but-return-a-value" data-toc="functions-that-don-t-take-parameter-s-but-return-a-value">Functions that don't take parameter(s) but return a value</h3><p id="f98abv_35">These functions don't take any parameter(s), but they return a value.</p><div class="code-block" data-lang="javascript">
 function add() {
   let a = 55;
   let b = 68;
@@ -57,62 +57,62 @@ function add() {
 }
 
 console.log(add());
-</div></section><section class="chapter"><h3 id="functions-that-take-parameter-s-but-don-t-return-a-value" data-toc="functions-that-take-parameter-s-but-don-t-return-a-value">Functions that take parameter(s) but don't return a value</h3><p id="lv82ew_37">These functions take parameter(s) but don't return a value.</p><div class="code-block" data-lang="javascript">
+</div></section><section class="chapter"><h3 id="functions-that-take-parameter-s-but-don-t-return-a-value" data-toc="functions-that-take-parameter-s-but-don-t-return-a-value">Functions that take parameter(s) but don't return a value</h3><p id="f98abv_37">These functions take parameter(s) but don't return a value.</p><div class="code-block" data-lang="javascript">
 function add(a, b) {
   console.log(a + b);
 }
 add(5, 3);
-</div></section><section class="chapter"><h3 id="functions-that-take-parameter-s-and-return-a-value" data-toc="functions-that-take-parameter-s-and-return-a-value">Functions that take parameter(s) and return a value</h3><p id="lv82ew_39">These functions take in parameter(s) and return a value.</p><div class="code-block" data-lang="javascript">
+</div></section><section class="chapter"><h3 id="functions-that-take-parameter-s-and-return-a-value" data-toc="functions-that-take-parameter-s-and-return-a-value">Functions that take parameter(s) and return a value</h3><p id="f98abv_39">These functions take in parameter(s) and return a value.</p><div class="code-block" data-lang="javascript">
 function add(a, b) {
   return a + b;
 }
 console.log(add(5, 3));
-</div></section></section><section class="chapter"><h2 id="types-of-functions-in-javascript" data-toc="types-of-functions-in-javascript">Types of functions in JavaScript</h2><p id="lv82ew_41">JavaScript has the following types of functions:</p><ul class="list _bullet" id="lv82ew_42"><li class="list__item" id="lv82ew_48"><p>Function declaration</p></li><li class="list__item" id="lv82ew_49"><p>Function expression/anonymous function</p></li><li class="list__item" id="lv82ew_50"><p>Arrow functions</p></li><li class="list__item" id="lv82ew_51"><p>Immediately Invoked Function Expression (IIFE)</p></li><li class="list__item" id="lv82ew_52"><p>Callback functions</p></li></ul><section class="chapter"><h3 id="function-declaration" data-toc="function-declaration">Function declaration</h3><div class="code-block" data-lang="javascript">
+</div></section></section><section class="chapter"><h2 id="types-of-functions-in-javascript" data-toc="types-of-functions-in-javascript">Types of functions in JavaScript</h2><p id="f98abv_41">JavaScript has the following types of functions:</p><ul class="list _bullet" id="f98abv_42"><li class="list__item" id="f98abv_48"><p>Function declaration</p></li><li class="list__item" id="f98abv_49"><p>Function expression/anonymous function</p></li><li class="list__item" id="f98abv_50"><p>Arrow functions</p></li><li class="list__item" id="f98abv_51"><p>Immediately Invoked Function Expression (IIFE)</p></li><li class="list__item" id="f98abv_52"><p>Callback functions</p></li></ul><section class="chapter"><h3 id="function-declaration" data-toc="function-declaration">Function declaration</h3><div class="code-block" data-lang="javascript">
 function add(a, b) {
   console.log(a + b);
 }
 
 add(5, 2);
-</div></section><section class="chapter"><h3 id="function-expression-anonymous-function" data-toc="function-expression-anonymous-function">Function expression/anonymous function</h3><p id="lv82ew_54">Involves saving a function to a variable.</p><div class="code-block" data-lang="javascript">
+</div></section><section class="chapter"><h3 id="function-expression-anonymous-function" data-toc="function-expression-anonymous-function">Function expression/anonymous function</h3><p id="f98abv_54">Involves saving a function to a variable.</p><div class="code-block" data-lang="javascript">
 let add = function (a, b) {
   console.log(a + b);
 }
 
 add(5, 2);
-</div></section><section class="chapter"><h3 id="arrow-functions" data-toc="arrow-functions">Arrow functions</h3><p id="lv82ew_56">Arrow functions were introduced in ES6 and are used to simplify how we write functions.</p><div class="code-block" data-lang="javascript">
+</div></section><section class="chapter"><h3 id="arrow-functions" data-toc="arrow-functions">Arrow functions</h3><p id="f98abv_56">Arrow functions were introduced in ES6 and are used to simplify how we write functions.</p><div class="code-block" data-lang="javascript">
 let add = (a, b) =&gt; {
   return a + b;
 }
 
 console.log(add(5, 2));
-</div><p id="lv82ew_58"><span class="control" id="lv82ew_67">If an arrow function has only one line in the body, we can get rid of the curly braces</span></p><p id="lv82ew_59">This means that instead of:</p><div class="code-block" data-lang="javascript">
+</div><p id="f98abv_58"><span class="control" id="f98abv_67">If an arrow function has only one line in the body, we can get rid of the curly braces</span></p><p id="f98abv_59">This means that instead of:</p><div class="code-block" data-lang="javascript">
 let add = (a, b) =&gt; {
   console.log(a + b);
 }
 
 add(5, 2);
-</div><p id="lv82ew_61">We can write:</p><div class="code-block" data-lang="javascript">
+</div><p id="f98abv_61">We can write:</p><div class="code-block" data-lang="javascript">
 let add = (a, b) =&gt; console.log(a + b);
-</div><p id="lv82ew_63"><span class="control" id="lv82ew_68">If an arrow function has only one line of code in the body and that line happens to be a return statement, we can get rid of the <code class="code" id="lv82ew_69">return</code> keyword:</span></p><div class="code-block" data-lang="javascript">
+</div><p id="f98abv_63"><span class="control" id="f98abv_68">If an arrow function has only one line of code in the body and that line happens to be a return statement, we can get rid of the <code class="code" id="f98abv_69">return</code> keyword:</span></p><div class="code-block" data-lang="javascript">
 let add = (a, b) =&gt; a + b;
 
 console.log(add(5, 2));
-</div><p id="lv82ew_65"><span class="control" id="lv82ew_70">If an arrow function has only one parameter, we can get rid of the parenthesis:</span></p><div class="code-block" data-lang="javascript">
+</div><p id="f98abv_65"><span class="control" id="f98abv_70">If an arrow function has only one parameter, we can get rid of the parenthesis:</span></p><div class="code-block" data-lang="javascript">
 let square = number =&gt; number * number;
 
 console.log(square(8)); // 64
-</div></section><section class="chapter"><h3 id="immediately-invoked-function-expressions-iife" data-toc="immediately-invoked-function-expressions-iife">Immediately Invoked Function Expressions (IIFE)</h3><p id="lv82ew_71">These functions are executed immediately after being defined:</p><div class="code-block" data-lang="javascript">
+</div></section><section class="chapter"><h3 id="immediately-invoked-function-expressions-iife" data-toc="immediately-invoked-function-expressions-iife">Immediately Invoked Function Expressions (IIFE)</h3><p id="f98abv_71">These functions are executed immediately after being defined:</p><div class="code-block" data-lang="javascript">
 (function () {
   console.log(&quot;Hello, World!&quot;);
 })();
-</div><p id="lv82ew_73">These functions can also take parameters:</p><div class="code-block" data-lang="javascript">
+</div><p id="f98abv_73">These functions can also take parameters:</p><div class="code-block" data-lang="javascript">
 (function (a, b) {
   let sum = a + b;
   let product = a + b;
   console.log(`The sum of ${a} and ${b} is ${sum}`);
   console.log(`The product of ${a} and ${b} is ${product}`);
 })(5, 6);
-</div></section><section class="chapter"><h3 id="callback-functions" data-toc="callback-functions">Callback functions</h3><p id="lv82ew_75">Refer to functions passed as arguments to other functions.</p><div class="code-block" data-lang="javascript">
+</div></section><section class="chapter"><h3 id="callback-functions" data-toc="callback-functions">Callback functions</h3><p id="f98abv_75">Refer to functions passed as arguments to other functions.</p><div class="code-block" data-lang="javascript">
 function greet(name, callback) {
   console.log(`Hello ${name}`);
   callback();
@@ -121,4 +121,4 @@ function greet(name, callback) {
 greet(&quot;Dennis&quot;, function () {
   console.log(&quot;Welcome back&quot;);
 });
-</div></section></section><div class="last-modified">Last modified: 20 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="loops.html" class="navigation-links__prev">Loops</a><a href="scope.html" class="navigation-links__next">Scope</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.js"></script></body></html>
+</div></section></section><div class="last-modified">Last modified: 21 February 2025</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="loops.html" class="navigation-links__prev">Loops</a><a href="scope.html" class="navigation-links__next">Scope</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b575/app.js"></script></body></html>
