@@ -61,4 +61,7 @@
         <toc-element topic="Getters-and-Setters.md"/>
     </toc-element>
     <toc-element topic="Introduction-to-fetch-and-HTTP-Requests.md"/>
+    <toc-element topic="Package-Managers.md">
+        <toc-element topic="npm.md"/>
+    </toc-element>
 </instance-profile>
